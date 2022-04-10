@@ -512,5 +512,111 @@ a {
 }
 
 .donation {
+    background: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.donation_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
+}
+
+.donation_image {
+    padding-left: 170px;
+    padding-top: 10px;
+}
+
+.donation_text {
+    padding-right: 190px;
+    margin-top: -45px;
+}
+
+.donation_title {
+   font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+    margin-bottom: 20px;
+
+
+}
+
+.donation_subtitle {
+   font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+   
+
+}
+
+.bank_number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 43px;
+    width: 349px;
+    left: 0px;
+    top: 147px;
+    border-radius: 9px;
+    padding: 10px, 15px, 10px, 15px;
+    background: #F1CDB3;
+    margin-top: 17px;
+
+
+}
+
+.bank_number:hover {
+    cursor: pointer;
+    background: #FDDCC4;
+    border: 1px solid #F1CDB3;
+    box-shadow: 1px 1px 2px 2px #F1CDB3;
+    transition: 0.8s;
+    
+}
+
+.donation_logo {
+    /*height: 23px;
+    width: 30px;*/
+    border-radius: 0px;
+    padding-left: 10px;
+    
+
+}
+
+.donation_link {
+   font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+    text-decoration: none;
+    padding-right: 5px;
+
+
+}
+
+.donation_little_info {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #B2B2B2;
+    margin-top: 20px;
+
+
 }
