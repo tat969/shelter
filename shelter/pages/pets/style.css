@@ -155,6 +155,7 @@ margin-bottom: -15px;
 main {
   background: #F6F6F6;
   margin-top: 25px;
+  
 }
 
 .our_friends {
@@ -202,6 +203,7 @@ main {
 
 .card:hover {
     cursor: pointer;
+    
     background: #F6F6F6;
     border: 1px solid #f0ebe7;
     box-shadow: 1px 1px 2px 2px #f0ebe7;;
@@ -210,6 +212,12 @@ main {
 
 .card:hover .learn_more_btn {
     background: #FDDCC4;
+    
+}
+
+
+.card:hover img {
+    border: none;
 }
 
 .img_wrapper {
@@ -223,6 +231,8 @@ main {
 
 }
 
+
+
 .photo {
     position:absolute;
     margin: auto;
@@ -232,6 +242,7 @@ main {
     bottom: 0;
     width: 100%;
     float: left;
+    border-radius: 9px;
 }
 
 
@@ -284,63 +295,262 @@ main {
 
 }
 
-
-
-.arrow_left {
-    padding-top: 191px;
-    padding-left: 10px;
+.buttons_slider {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 60px;
     height: 52px;
-    width: 52px;
-    
-
+    width: 340px;
+    top: 1110px;
+    padding-left: 465px;
+    padding-top: 10px;
+    margin-bottom: 112px;
 }
 
-.arrow_right {
-    padding-top: 191px;
-    margin-right: 10px;
-    height: 52px;
-    width: 52px;
-    
-}
-
-
-.arrow_btn {
+.btn_slider {
     background-color: transparent;
     border-radius: 100px;
     border: 2px solid #F1CDB3;
     outline: none;
     height: 52px;
     width: 52px;
+    left: 430px;
+    top: 1110px;
+    border-radius: 0px;
     
-    
+
     
 }
 
-.arrow_btn:hover {
+.btn_link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.inactive_1 {
+    background-color: transparent;
+    border-radius: 100px;
+    border: 2px solid  #CDCDCD;
+    outline: none;
+    height: 52px;
+    width: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inactive_2 {
+    background-color: transparent;
+    border-radius: 100px;
+    border: 2px solid  #CDCDCD;
+    outline: none;
+    height: 52px;
+    width: 80px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.inactive_link {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #CDCDCD;
+
+
+}
+
+.active_btn {
+    background-color: #F1CDB3;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    outline: none;
+    height: 52px;
+    width: 52px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.active_btn:hover {
     cursor: pointer;
     background: #FDDCC4;
     border: 1px solid #F1CDB3;
     box-shadow: 1px 1px 2px 2px #F1CDB3;
     transition: 0.8s;
     
-   
 }
 
 
+.active_link {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #292929;
 
-.get_btn {
-    padding-left: 510px;
-    padding-top: 34px;
-    padding-bottom: 100px;
+
 }
 
-.btn_friends {
-    height: 52px;
-    width: 261px;
-    left: 470px;
-    top: 645px;
+.next_btn_1 {
+    background-color: transparent;
     border-radius: 100px;
-    
+    border: 2px solid #F1CDB3;
+    outline: none;
+    height: 52px;
+    width: 52px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.next_btn_1:hover {
+    cursor: pointer;
+    border: 1px solid #F1CDB3;
+    box-shadow: 1px 1px 2px 2px #F1CDB3;
+    transition: 0.8s;
+}
+
+.next_btn_2 {
+    background-color: transparent;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    outline: none;
+    height: 52px;
+    width: 52px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.next_btn_2:hover {
+    cursor: pointer;
+    border: 1px solid #F1CDB3;
+    box-shadow: 1px 1px 2px 2px #F1CDB3;
+    transition: 0.8s;
+}
+
+.next_link {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #292929;
+
 
 }
+
+
+.footer {
+    background-image: linear-gradient(to left,#211F20,#262425, #5B483A);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 42px;
+   
+    
+    
+}
+
+
+.footer_info {
+
+}
+
+.footer_contacts {
+   margin-top: -30px;
+   padding-right: 90px;
+
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+}
+
+.footer_mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 30px;
+}
+
+.footer_number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    padding-top: 10px;
+}
+
+.footer_address {
+    margin-top: -30px;
+    padding-right: 30px;
+    
+}
+
+.footer_image {
+    padding-left: 80px;
+}
+
+.footer_title {
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #FFFFFF;
+
+
+}
+
+.contacts_styles {
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #F1CDB3;
+
+
+}
+
+.addresses {
+    display: flex;
+    flex-direction: column;
+    margin-top: -12px;
+}
+
+.first_address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 30px;
+}
+
+.second_address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 19px;
+
+}
+
+
+
+
+
 
