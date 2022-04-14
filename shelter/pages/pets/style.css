@@ -373,14 +373,14 @@ main {
     padding-right: 19px;
 }
 
-.active_btn:hover {
+/*.active_btn:hover *//*{
     cursor: pointer;
     background: #FDDCC4;
     border: 1px solid #F1CDB3;
     box-shadow: 1px 1px 2px 2px #F1CDB3;
     transition: 0.8s;
     
-}
+}*/
 
 
 .active_link {
@@ -409,6 +409,7 @@ main {
 .next_btn_1:hover {
     cursor: pointer;
     border: 1px solid #F1CDB3;
+    background: #FDDCC4;
     box-shadow: 1px 1px 2px 2px #F1CDB3;
     transition: 0.8s;
 }
@@ -427,6 +428,7 @@ main {
 .next_btn_2:hover {
     cursor: pointer;
     border: 1px solid #F1CDB3;
+    background: #FDDCC4;
     box-shadow: 1px 1px 2px 2px #F1CDB3;
     transition: 0.8s;
 }
