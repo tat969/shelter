@@ -1,0 +1,43 @@
+.pets {
+    background: $color-light;
+    display: flex;
+    flex-direction: column;
+    padding: 85px 0 100px 10px;
+    
+}
+
+.pets-title{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+/*@media (max-width: 1279px) {
+.pets_slider {
+   // width: calc(100%-60px);
+}
+
+.friends_title {
+    text-align: center;
+
+}
+
+.cards {
+    max-width: 708px;
+    gap: 40px;
+}
+
+.card_hidden {
+   display: none;
+    
+    
+}
+
+.get_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: unset;
+}
+} */

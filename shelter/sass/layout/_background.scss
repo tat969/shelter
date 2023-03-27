@@ -1,0 +1,11 @@
+.background-wrapper {
+    background: $color-background;
+}
+
+.background-wrapper_add {
+    background: url("../assets/images/gradient-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0 0 0;
+   
+}

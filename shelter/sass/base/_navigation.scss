@@ -1,0 +1,47 @@
+.header__nav {
+    margin: 0 0 0 531px;
+    padding: 8px 0 0 0;
+}
+
+.nav-items{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+    
+    
+}
+
+.nav-item{
+    @extend %font-add;
+    @include font-text;
+
+}
+
+.nav-link {
+    color: $color-link;
+    @extend %cursor;
+    @extend %transition;
+    
+   &:hover {
+    color: $color-link-active;
+   }
+
+   &:active {
+    color: $color-link-active;
+    border-bottom: 2px solid #F1CDB3;
+    padding-bottom: 3px;
+   }
+
+}
+
+
+.nav-link_active{
+    color: $color-link-active;
+    border-bottom: 2px solid #F1CDB3;
+    padding-bottom: 3px;
+    
+}
+
+

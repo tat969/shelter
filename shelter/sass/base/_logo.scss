@@ -1,0 +1,26 @@
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 6px;
+
+}
+    
+.header-logo_title {
+  color: $color-primary;
+  padding: 0 0 10px 0;
+  
+
+  &:hover {
+    color: $color-primary-hover;
+  }
+ 
+}
+
+
+.header-logo_subtitle {
+  @include font(1.3rem, normal, 400, 15px);
+  letter-spacing: 0.1em;
+   color: $color-light; 
+   padding: 0 0 0 5px;
+    
+}

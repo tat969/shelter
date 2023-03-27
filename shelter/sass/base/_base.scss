@@ -1,0 +1,43 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+h1 {
+    @include font (3.2rem, normal, 400, 35.2px);
+    letter-spacing: 0.06em;
+}
+
+h2 {
+    @include font (4.4rem, normal, 400, 57px);
+    color: $color-light;
+
+}
+
+h3 {
+    @include font (3.5rem, normal, 400, 45px);
+    letter-spacing: 0.06em;
+    color: $color-title;
+
+}
+
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    @extend %cursor;
+}
+
+img {
+    margin: 0;
+}
