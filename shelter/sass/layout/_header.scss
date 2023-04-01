@@ -5,6 +5,11 @@
     align-items: flex-start;
     background: transparent;
     padding: 30px 0 0 0;
+
+    @include media-tablet {
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 }
 
 

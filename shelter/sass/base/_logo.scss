@@ -13,7 +13,15 @@
   &:hover {
     color: $color-primary-hover;
   }
- 
+
+  @include media-laptop {
+    padding: 0;
+    margin: 0 0 10px 0;
+  } 
+
+  @include media-tablet {
+    
+  }
 }
 
 
@@ -22,5 +30,5 @@
   letter-spacing: 0.1em;
    color: $color-light; 
    padding: 0 0 0 5px;
-    
+  
 }

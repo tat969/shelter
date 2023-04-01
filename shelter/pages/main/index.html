@@ -40,13 +40,10 @@
                 </ul>
                 <div class="header_nav_close">
                   <span class="header_nav_close_line"></span>
-                  <span class="header_nav_close_line"></span>
                 </div>
               </nav>
               <div class="header_burger burger">
                 <span class="burger_line burger_line_first"></span>
-                <span class="burger_line burger_line_second"></span>
-                <span class="burger_line burger_line_third"></span>
               </div>
             </div>
           </div>
@@ -68,11 +65,17 @@
                 </button>
               </div>
               <div class="start-image">
-                <img
+                <picture>
+                  <source
+                    srcset="../../assets/images/start-screen-puppy-tablet.png"
+                    media="(max-width: 1275px)"
+                  />
+                  <img
                   class="puppy-image"
                   src="../../assets/images/start-screen-puppy.png"
                   alt="puppy"
                 />
+                </picture>
               </div>
             </div>
           </div>
@@ -355,5 +358,5 @@
       </footer>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="../../src/script.js"></script>
 </html>
