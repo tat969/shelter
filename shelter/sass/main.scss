@@ -19,319 +19,20 @@
 @import "layout/header";
 @import "layout/slider";
 //@import "layout/columns";
-//@import "layout/footer";
+@import "layout/footer";
 
 //Components
 @import "components/start";
 @import "components/about";
 @import "components/pets";
 @import "components/help";
-//@import "components/contacts";
+@import "components/donation";
 
 
 
-.donation {
-    background: #F6F6F6;
-    padding-top: 80px;
-    padding-bottom: 87px;
-}
-
-.donation_info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-
-.donation_image {
-    padding-left: 170px;
-    padding-top: 10px;
-}
-
-.donation_text {
-    padding-right: 190px;
-    margin-top: -45px;
-}
-
-.donation_title {
-   font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #545454;
-    margin-bottom: 20px;
-
-
-}
-
-.donation_subtitle {
-   font-family: Georgia;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #545454;
-   
-
-}
-
-.bank_number {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 43px;
-    width: 349px;
-    left: 0px;
-    top: 147px;
-    border-radius: 9px;
-    padding: 10px, 15px, 10px, 15px;
-    background: #F1CDB3;
-    margin-top: 17px;
-
-
-}
-
-.bank_number:hover {
-    cursor: pointer;
-    background: #FDDCC4;
-    border: 1px solid #F1CDB3;
-    box-shadow: 1px 1px 2px 2px #F1CDB3;
-    transition: 0.8s;
-    
-}
-
-.donation_logo {
-    /*height: 23px;
-    width: 30px;*/
-    border-radius: 0px;
-    padding-left: 10px;
-    
-
-}
-
-.donation_link {
-   font-family: Georgia;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #545454;
-    text-decoration: none;
-    padding-right: 5px;
-
-
-}
-
-.donation_little_info {
-    font-family: Arial;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #B2B2B2;
-    margin-top: 20px;
-
-
-}
-
-@media (max-width: 1279px) {
-    .donation_info {
-       flex-direction: column-reverse;
-       padding-top: 80px;
-        
-        
-    }
-    
-    .donation_image {
-       display: block;
-       margin-right: auto;
-       margin-left: auto;
-       padding-left: unset;
-    }
-    
-    .donation_text {
-      margin-left: auto;
-      margin-right: auto;
-      padding-right: unset;
-    }
-    
-}
-
-.footer {
-    background-image: linear-gradient(to left,#211F20,#262425, #5B483A);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.footer_section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: calc(100% - 80px);
-    margin-top: 40px;
-    
-    
-}
-
-
-.footer__contacts {
-    display: flex;
-    flex-direction: row;
-    gap: 95px;
-}
-
-.footer_contacts {
-   padding-right: 70px;
-   margin-top: -30px;
-
-}
-.contacts {
-    display: flex;
-    flex-direction: column;
-    margin-top: -8px;
-    gap: 30px;
-}
-
-.footer_title_first {
-    width: 280px;
-    
-
-
-}
-
-.footer_title_second {
-    width: 270px;
-    
-}
-
-.footer_mail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 19px;
-    padding-top: -5px;
-   
-}
-
-.footer_number {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 19px;
-    padding-top: 10px;
-}
-
-.footer_address {
-    margin-top: -30px;
-    padding-right: 13px;
-    
-}
-
-.first_address{
-    width: 302px;
-    text-align: justify;
-}
-
-.second_address {
-    width: 302px;
-}
-
-.footer_image {
-    padding-left: 90px;
-}
-
-.footer_title {
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #FFFFFF;
-
-
-}
-
-.contacts_styles {
-    text-decoration: none;
-    font-family: Georgia;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #F1CDB3;
-
-
-}
 
 
 
-.addresses {
-    display: flex;
-    flex-direction: column;
-    margin-top: -12px;
-}
-
-.first_address {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 19px;
-    margin-bottom: 30px;
-}
-
-.second_address {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 19px;
-
-}
-
-@media (max-width: 1279px) {
-    .footer_section {
-        flex-direction: column;
-        margin: 0 auto;
-        //width: calc(100%- 60px);
-    }
-    
-    .footer__contacts {
-       justify-content: space-evently;
-       align-items: center;
-       margin-left: auto;
-       margin-right: auto;
-       
-       margin-bottom: 65px;
-       gap: 60px;
-    }
-    
-    .footer_contacts {
-        padding-right: unset;
-    }
-
-    .footer_title_first {
-        text-align: left;
-    }
-    
-    .footer_address {
-        padding-right: unset;
-    }
-
-    .footer_image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: unset;
-    }
-    
-}
 
 
 /*pets*/
@@ -537,11 +238,11 @@ margin-right: 37px;
 
 /*main styles start*/
 
-main {
+/*main {
   background: #F6F6F6;
   margin-top: 25px;
   
-}
+}*/
 
 /*.our_friends {
     background: #F6F6F6;
@@ -776,7 +477,7 @@ main {
 }*/
 
 
-.active_link {
+/*.active_link {
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
@@ -1029,4 +730,4 @@ main {
         padding-left: unset;
     }
     
-}
+}*/

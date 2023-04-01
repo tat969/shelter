@@ -1,0 +1,91 @@
+.donation {
+    @extend %background-add;
+    padding: 83px 0 100px 0;
+}
+
+.donation_info {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 150px;
+    
+}
+
+.donation_image {
+    padding: 10px 0 0;
+    margin: 0 30px 0 0;
+}
+
+.donation_title {
+    @include font(35px, normal, 400, 45px);
+    letter-spacing: 0.06em;
+    color: $color-title;
+    margin-bottom: 18px;
+}
+
+.donation_subtitle {
+    @include font(15px, normal, 400px, 17px);
+    letter-spacing: 0.06em;
+    color: $color-title;
+}
+
+.bank_number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 43px;
+    max-width: 349px;
+    border-radius: 9px;
+    background: $color-primary;
+    margin-top: 17px;
+    @extend %cursor;
+    @extend %transition;
+
+    &:hover {
+        background: $color-primary-hover;
+        box-shadow: 1px 1px 2px 2px $color-primary-hover;
+    }
+
+.donation_logo {
+    padding: 0 0 0 10px;
+}
+
+.donation_link {
+    @include font(20px, normal, 400, 23px);
+    letter-spacing: 0.06em;
+    color: $color-title;
+    padding-right: 5px;
+}
+
+}
+
+.donation_little_info {
+    @extend %font-add;
+    @include font(12px, italic, 400, 18px);
+    color: $color-copyright;
+    margin-top: 20px;
+}
+
+/*@media (max-width: 1279px) {
+    .donation_info {
+       flex-direction: column-reverse;
+       padding-top: 80px;
+        
+        
+    }
+    
+    .donation_image {
+       display: block;
+       margin-right: auto;
+       margin-left: auto;
+       padding-left: unset;
+    }
+    
+    .donation_text {
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: unset;
+    }
+    
+}
+
+*/
