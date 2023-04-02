@@ -1,23 +1,16 @@
 .wrapper {
     max-width: $content-width;
     margin: 0 auto;
+
+    @include media-laptop {
+        padding: 0;
+    }
+
+    @include media-tablet {
+        padding: 0 5px;
+    }
    
 }
 
-/*@media (max-width:1279px) {
-    .wrapper {
-        overflow: hidden;
-        
-    }
     
 
-}
-
-@media (max-width:767px) {
-    .wrapper {
-        overflow: hidden;
-        
-    }
-    
-
-}*/

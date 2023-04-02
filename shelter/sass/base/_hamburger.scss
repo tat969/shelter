@@ -1,55 +1,84 @@
-/*.header_burger {
+%burger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-primary;
+    position: absolute;
+}
+
+.header_burger  {
     display: none;
-}
-
-@media (max-width: 1279px) {
+    width: 30px;
+    height: 22px;
+    @extend %cursor;
+    position: relative;
     
-.header_container {
-    //width:  calc(100% - 60);
-    margin-top: -20px;
-    
-}
-}
-
-@media (max-width: 767px) {
-    
-    .header_container {
-        //width:  calc(100% - 60);
-        margin-top: -20px;
-        
-    }
-    
-    .header_burger {
-        display: none;
-        width: 50px;
-        height: 28px;
-        position: relative;
-        padding: 15px;
-        
-    }
-    
-    .burger_line {
-        display:block;
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        position: absolute;
+    &::before {
+        @extend %burger-line;
+        content: "";
+        top: 0;
         left: 0;
-    
-        
     }
-    
-    .burger_line_first {
-        top:0;
-    }
-    
-    .burger_line_second {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    .burger_line_third {
+
+    &::after {
+        @extend %burger-line;
+        content: "";
         bottom: 0;
+        left: 0;
     }
-    
-    }*/
+
+    @include media-tablet {
+        display: block;
+        margin: 0 8px 0 0;
+    }
+
+
+}
+
+
+.burger_line_first {
+    @extend %burger-line;
+    top: 45%;
+    left: 0;
+}
+
+
+.header_nav_close {
+    display: none;
+    width: 30px;
+    height: 22px;
+    @extend %cursor;
+    position: relative;
+
+    &::before {
+        @extend %burger-line;
+        content: "";
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        @extend %burger-line;
+        content: "";
+        bottom: 0;
+        left: 0;
+    }
+
+
+    @include media-tablet {
+        display: block;
+        z-index: 11;
+        top: 7%;
+        right: 15%;
+        position: absolute;
+        transform: translateY(50%) rotate(90deg);
+    }
+}
+
+.header_nav_close_line{
+    @extend %burger-line;
+    top: 45%;
+    left: 0;
+
+
+}

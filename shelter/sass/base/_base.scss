@@ -18,13 +18,20 @@ h2 {
     @include font (4.4rem, normal, 400, 57px);
     color: $color-light;
 
+    @include media-tablet {
+        @include font (25px, normal, 400, 32px); 
+        letter-spacing: 0.06em;
+    }
 }
 
 h3 {
     @include font (3.5rem, normal, 400, 45px);
     letter-spacing: 0.06em;
-    color: $color-title;
 
+    @include media-tablet {
+        @include font(25px, normal, 400, 32px);
+        letter-spacing: 0.06em;
+    }
 }
 
 
