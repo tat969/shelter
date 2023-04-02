@@ -6,9 +6,15 @@
     background: transparent;
     padding: 30px 0 0 0;
 
+    @include media-laptop {
+        padding: 30px 20px 0 20px;
+    }
+
     @include media-tablet {
         align-items: center;
         flex-wrap: nowrap;
+        padding: 30px 0 0 0;
+
     }
 }
 
