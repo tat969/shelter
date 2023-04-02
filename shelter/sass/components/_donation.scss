@@ -1,18 +1,38 @@
 .donation {
     @extend %background-add;
     padding: 83px 0 100px 0;
+
+    @include media-laptop {
+        padding: 81px 0 100px 0;
+    }
 }
 
 .donation_info {
     display: flex;
     flex-direction: row;
     margin: 0 0 0 150px;
+
+    @include media-laptop {
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin: 0;
+    }
     
+}
+
+.donation_text {
+    @include media-laptop {
+        margin: 0 0 0 190px;
+    }
 }
 
 .donation_image {
     padding: 10px 0 0;
     margin: 0 30px 0 0;
+
+    @include media-laptop {
+        margin: 0 0 0 130px;
+    }
 }
 
 .donation_title {

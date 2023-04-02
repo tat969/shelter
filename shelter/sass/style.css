@@ -1112,12 +1112,12 @@ img {
 }
 @media (max-width: 1275px) {
   .pets {
-    padding: 77px 0 100px 10px;
+    padding: 90px 0 100px 10px;
   }
 }
 @media (max-width: 767px) {
   .pets {
-    padding: 40px 0 0 0;
+    padding: 40px 0 45px 0;
   }
 }
 
@@ -1139,9 +1139,13 @@ img {
 }
 
 .helper {
-  padding-top: 80px;
-  padding-bottom: 90px;
+  padding: 80px 0 90px 0;
   background: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .helper {
+    padding: 40px 0 35px 0;
+  }
 }
 
 .helper-title {
@@ -1149,9 +1153,26 @@ img {
   text-align: center;
   color: #545454;
 }
+@media (max-width: 767px) {
+  .helper-title {
+    margin: 0;
+  }
+}
 
 .help_list {
   margin: 60px 0 0 15px;
+}
+@media (max-width: 1275px) {
+  .help_list {
+    max-width: 630px;
+    margin: 60px 0 0 68px;
+  }
+}
+@media (max-width: 320px) {
+  .help_list {
+    max-width: 290px;
+    margin: 43px 0 0 0;
+  }
 }
 
 .help_cards {
@@ -1160,6 +1181,28 @@ img {
   align-items: center;
   justify-content: center;
   gap: 55px 120px;
+}
+@media (max-width: 1275px) {
+  .help_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  .help_cards > * {
+    flex-basis: 27%;
+  }
+}
+@media (max-width: 767px) {
+  .help_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 29px;
+  }
+  .help_cards > * {
+    flex-basis: 45%;
+  }
 }
 
 .help_card {
@@ -1175,6 +1218,13 @@ img {
   height: 60px;
   margin-bottom: 20px;
 }
+@media (max-width: 320px) {
+  .help_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+}
 
 .help_subtitle {
   font-size: 20px;
@@ -1185,32 +1235,22 @@ img {
   color: #545454;
   margin: 10px 0 0;
 }
-
-/*@media (max-width: 1279px) {
-
-
-    .title_help {
-        text-align: center;
-    }
-
-    .help_list {
-        //width: calc(100%- 60px);
-
-    }
-
-    .help_cards {
-        max-width: 630px;
-        justify-content: space-between;
-        align-items: center;
-        gap: 55px 60px;
-
-    }
-
+@media (max-width: 320px) {
+  .help_subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    font-style: normal;
+  }
 }
 
-*/
 .donation {
   padding: 83px 0 100px 0;
+}
+@media (max-width: 1275px) {
+  .donation {
+    padding: 81px 0 100px 0;
+  }
 }
 
 .donation_info {
@@ -1218,10 +1258,28 @@ img {
   flex-direction: row;
   margin: 0 0 0 150px;
 }
+@media (max-width: 1275px) {
+  .donation_info {
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1275px) {
+  .donation_text {
+    margin: 0 0 0 190px;
+  }
+}
 
 .donation_image {
   padding: 10px 0 0;
   margin: 0 30px 0 0;
+}
+@media (max-width: 1275px) {
+  .donation_image {
+    margin: 0 0 0 130px;
+  }
 }
 
 .donation_title {

@@ -1,18 +1,35 @@
 .helper{
-    padding-top: 80px;
-    padding-bottom: 90px;
+    padding: 80px 0 90px 0;
     background: $color-background;
+
+    @include media-tablet {
+        padding: 40px 0 35px 0;
+    }
 }
 
 .helper-title{
     margin: 0  0 0 15px;
     text-align: center;
     color: $color-title;
+
+    @include media-tablet {
+        margin: 0;
+    }
     
 }
 
 .help_list {
     margin: 60px 0 0 15px;
+
+    @include media-laptop {
+        max-width: 630px;
+        margin: 60px 0 0 68px;
+    }
+
+    @include media-mobile {
+        max-width: 290px;
+        margin: 43px 0 0 0;
+    }
     
 }
 
@@ -22,6 +39,17 @@
     align-items: center;
     justify-content: center;
     gap: 55px 120px;
+
+    @include media-laptop {
+        @include columns(27%);
+        gap: 55px;
+        
+    }
+
+    @include media-tablet {
+        @include columns(45%);
+        gap: 29px;
+    }
    
 }
 
@@ -38,6 +66,12 @@
     width: 60px;
     height: 60px;
     margin-bottom: 20px;
+
+    @include media-mobile {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -47,28 +81,13 @@
     letter-spacing: 0.06em;
     color: $color-title;
     margin: 10px 0 0;
+
+    @include media-mobile {
+       @include font(15px, normal, 400, 17px);
+
+    }
 }
 
-/*@media (max-width: 1279px) {
-    
-    
-    .title_help {
-        text-align: center;
-    }
-    
-    .help_list {
-        //width: calc(100%- 60px);
-    
-    }
-    
-    .help_cards {
-        max-width: 630px;
-        justify-content: space-between;
-        align-items: center;
-        gap: 55px 60px;
-        
-    }
-    
-}
 
-*/
+    
+  
